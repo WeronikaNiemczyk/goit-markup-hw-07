@@ -16,33 +16,40 @@
   </head>
   <body>
     <header class="header">
-      <div class="navigation-panel container">
-        <div class="logo-with-nav">
+      <div class="header-navigation container">
+        <div class="header-navigation__panel">
           <a class="link webstudio" href="./index.html"
-            ><span class="blue">Web</span>Studio</a
+            ><span class="webstudio__color">Web</span>Studio</a
           >
-          <nav class="navigation">
-            <ul class="menu">
+          <nav class="header-navigation__menu">
+            <ul class="header-navigation__links">
               <li><a class="link" href="./index.html">Agencja</a></li>
               <li>
-                <a class="link portfolio" href="./portfolio.html">Portfolio</a>
+                <a
+                  class="link header-navigation__portfolio"
+                  href="./portfolio.html"
+                  >Portfolio</a
+                >
               </li>
               <li><a class="link" href="#">Kontakt</a></li>
             </ul>
           </nav>
         </div>
-        <ul class="menu">
+        <ul class="header-navigation__links">
           <li>
-            <a class="link contact mail" href="mailto:info@devstudio.com">
-              <svg class="envelope" width="16" height="12">
+            <a
+              class="link header-navigation__contact"
+              href="mailto:info@devstudio.com"
+            >
+              <svg class="header-navigation__icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
           <li>
-            <a class="link contact tel" href="tel:+48111111111">
-              <svg class="smartphone" width="10" height="16">
+            <a class="link header-navigation__contact" href="tel:+48111111111">
+              <svg class="header-navigation__icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               +48 111 111 111</a
@@ -57,23 +64,23 @@
         <section>
           <ul class="buttons">
             <li>
-              <button class="button port" type="button">Wszystkie</button>
+              <button class="buttons__menu" type="button">Wszystkie</button>
             </li>
-            <li><button class="button port" type="button">Strony</button></li>
+            <li><button class="buttons__menu" type="button">Strony</button></li>
             <li>
-              <button class="button port" type="button">Aplikacje</button>
+              <button class="buttons__menu" type="button">Aplikacje</button>
             </li>
-            <li><button class="button port" type="button">Dizajn</button></li>
+            <li><button class="buttons__menu" type="button">Dizajn</button></li>
             <li>
-              <button class="button port" type="button">Marketing</button>
+              <button class="buttons__menu" type="button">Marketing</button>
             </li>
           </ul>
         </section>
         <section>
           <ul class="images-list">
             <li>
-              <div class="figure-proffesion">
-                <div class="portfolio-img overlay">
+              <div class="profession">
+                <div class="profession__overlay">
                   <img
                     src="./images/p1.jpg"
                     width="370"
@@ -81,7 +88,7 @@
                     alt="strona internetowa"
                   />
 
-                  <div class="figure-description">
+                  <div class="profession__description">
                     <p>
                       Technocrack jest popularną platformą wykorzystywaną do
                       rozpowszechniania koronawirusa. Firmy wykorzystują tę
@@ -90,20 +97,20 @@
                     </p>
                   </div>
                 </div>
-                <p class="h6">Technocrack</p>
-                <p class="descrp">Strona internetowa</p>
+                <p class="profession__title">Technocrack</p>
+                <p class="profession__details">Strona internetowa</p>
               </div>
             </li>
             <li>
-              <div class="figure-proffesion">
-                <div class="portfolio-img overlay">
+              <div class="profession">
+                <div class="profession__overlay">
                   <img
                     src="./images/p2.jpg"
                     width="370"
                     height="294"
                     alt="grafika koszykarze"
                   />
-                  <div class="figure-description">
+                  <div class="profession__description">
                     <p>
                       Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                       Eaque cupiditate excepturi perferendis expedita nulla
@@ -111,20 +118,22 @@
                     </p>
                   </div>
                 </div>
-                <p class="h6">Grafika New Orlean vs Golden Star</p>
-                <p class="descrp">Dizajn</p>
+                <p class="profession__title">
+                  Grafika New Orlean vs Golden Star
+                </p>
+                <p class="profession__details">Dizajn</p>
               </div>
             </li>
             <li>
-              <div class="figure-proffesion">
-                <div class="portfolio-img overlay">
+              <div class="profession">
+                <div class="profession__overlay">
                   <img
                     src="./images/p3.jpg"
                     width="370"
                     height="294"
                     alt="logo restauracji"
                   />
-                  <div class="figure-description">
+                  <div class="profession__description">
                     <p>
                       Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                       Eaque cupiditate excepturi perferendis expedita nulla
@@ -132,20 +141,20 @@
                     </p>
                   </div>
                 </div>
-                <p class="h6">Restauracja Seafood</p>
-                <p class="descrp">Aplikacja</p>
+                <p class="profession__title">Restauracja Seafood</p>
+                <p class="profession__details">Aplikacja</p>
               </div>
             </li>
             <li>
-              <div class="figure-proffesion">
-                <div class="portfolio-img overlay">
+              <div class="profession">
+                <div class="profession__overlay">
                   <img
                     src="./images/p4.jpg"
                     width="370"
                     height="294"
                     alt="słuchawki nauszne"
                   />
-                  <div class="figure-description">
+                  <div class="profession__description">
                     <p>
                       Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                       Eaque cupiditate excepturi perferendis expedita nulla
@@ -153,20 +162,20 @@
                     </p>
                   </div>
                 </div>
-                <p class="h6">Projekt Prime</p>
-                <p class="descrp">Marketing</p>
+                <p class="profession__title">Projekt Prime</p>
+                <p class="profession__details">Marketing</p>
               </div>
             </li>
             <li>
-              <div class="figure-proffesion">
-                <div class="portfolio-img overlay">
+              <div class="profession">
+                <div class="profession__overlay">
                   <img
                     src="./images/p5.jpg"
                     width="370"
                     height="294"
                     alt="pudełka"
                   />
-                  <div class="figure-description">
+                  <div class="profession__description">
                     <p>
                       Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                       Eaque cupiditate excepturi perferendis expedita nulla
@@ -174,20 +183,20 @@
                     </p>
                   </div>
                 </div>
-                <p class="h6">Projekt Boxes</p>
-                <p class="descrp">Aplikacja</p>
+                <p class="profession__title">Projekt Boxes</p>
+                <p class="profession__details">Aplikacja</p>
               </div>
             </li>
             <li>
-              <div class="figure-proffesion">
-                <div class="portfolio-img overlay">
+              <div class="profession">
+                <div class="profession__overlay">
                   <img
                     src="./images/p6.jpg"
                     width="370"
                     height="294"
                     alt="monitor"
                   />
-                  <div class="figure-description">
+                  <div class="profession__description">
                     <p>
                       Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                       Eaque cupiditate excepturi perferendis expedita nulla
@@ -195,20 +204,20 @@
                     </p>
                   </div>
                 </div>
-                <p class="h6">Inspiration has no Borders</p>
-                <p class="descrp">Strona internetowa</p>
+                <p class="profession__title">Inspiration has no Borders</p>
+                <p class="profession__details">Strona internetowa</p>
               </div>
             </li>
             <li>
-              <div class="figure-proffesion">
-                <div class="portfolio-img overlay">
+              <div class="profession">
+                <div class="profession__overlay">
                   <img
                     src="./images/p7.jpg"
                     width="370"
                     height="294"
                     alt="gazeta"
                   />
-                  <div class="figure-description">
+                  <div class="profession__description">
                     <p>
                       Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                       Eaque cupiditate excepturi perferendis expedita nulla
@@ -216,20 +225,20 @@
                     </p>
                   </div>
                 </div>
-                <p class="h6">Magazyn Limited Edition</p>
-                <p class="descrp">Dizajn</p>
+                <p class="profession__title">Magazyn Limited Edition</p>
+                <p class="profession__details">Dizajn</p>
               </div>
             </li>
             <li>
-              <div class="figure-proffesion">
-                <div class="portfolio-img overlay">
+              <div class="profession">
+                <div class="profession__overlay">
                   <img
                     src="./images/p8.jpg"
                     width="370"
                     height="294"
                     alt="etykieta"
                   />
-                  <div class="figure-description">
+                  <div class="profession__description">
                     <p>
                       Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                       Eaque cupiditate excepturi perferendis expedita nulla
@@ -237,20 +246,20 @@
                     </p>
                   </div>
                 </div>
-                <p class="h6">Projekt LAB</p>
-                <p class="descrp">Marketing</p>
+                <p class="profession__title">Projekt LAB</p>
+                <p class="profession__details">Marketing</p>
               </div>
             </li>
             <li>
-              <div class="figure-proffesion">
-                <div class="portfolio-img overlay">
+              <div class="profession">
+                <div class="profession__overlay">
                   <img
                     src="./images/p9.jpg"
                     width="370"
                     height="294"
                     alt="laptop"
                   />
-                  <div class="figure-description">
+                  <div class="profession__description">
                     <p>
                       Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                       Eaque cupiditate excepturi perferendis expedita nulla
@@ -258,8 +267,8 @@
                     </p>
                   </div>
                 </div>
-                <p class="h6">Growing Business</p>
-                <p class="descrp">Aplikacja</p>
+                <p class="profession__title">Growing Business</p>
+                <p class="profession__details">Aplikacja</p>
               </div>
             </li>
           </ul>
@@ -267,22 +276,26 @@
       </main>
     </div>
     <footer class="footer">
-      <div class="container footer-container">
-        <div class="footer-layout">
+      <div class="container footer__container">
+        <div class="footer__layout">
           <a class="link webstudio" href="./index.html"
-            ><span class="blue">Web</span>Studio</a
+            ><span class="webstudio__color">Web</span>Studio</a
           >
           <address class="address">
-            <div class="list">
+            <div>
               <ul>
-                <li class="nav foot">m. Warszawa, Aleje Jerozolimskie 21</li>
+                <li class="footer__navigation">
+                  m. Warszawa, Aleje Jerozolimskie 21
+                </li>
                 <li>
-                  <a class="link nav foot" href="mailto:info@example.com"
+                  <a
+                    class="link footer__navigation"
+                    href="mailto:info@example.com"
                     >info@example.com</a
                   >
                 </li>
                 <li>
-                  <a class="link nav foot" href="tel:+48111111111"
+                  <a class="link footer__navigation" href="tel:+48111111111"
                     >+48 111 111 111</a
                   >
                 </li>
@@ -290,51 +303,52 @@
             </div>
           </address>
         </div>
-        <div class="social-media-footer">
-          <p class="join-us">Dołącz do nas</p>
-          <div class="footer-layout-icons">
-            <div class="footer-icons">
-              <svg class="social-media-icon-footer" width="20" height="20">
+        <div class="join-us">
+          <p class="join-us__text">Dołącz do nas</p>
+          <div class="join-us__icons">
+            <div class="join-us__img">
+              <svg width="20" height="20">
                 <use href="./images/icons.svg#icon-instagram-2"></use>
               </svg>
             </div>
-            <div class="footer-icons">
-              <svg class="social-media-icon-footer" width="20" height="20">
+            <div class="join-us__img">
+              <svg width="20" height="20">
                 <use href="./images/icons.svg#icon-twitter-1"></use>
               </svg>
             </div>
-            <div class="footer-icons">
-              <svg class="social-media-icon-footer" width="20" height="20">
+            <div class="join-us__img">
+              <svg width="20" height="20">
                 <use href="./images/icons.svg#icon-facebook-1"></use>
               </svg>
             </div>
-            <div class="footer-icons">
-              <svg class="social-media-icon-footer" width="20" height="20">
+            <div class="join-us__img">
+              <svg width="20" height="20">
                 <use href="./images/icons.svg#icon-linkedin-1"></use>
               </svg>
             </div>
           </div>
         </div>
-        <div class="newsletter-footer">
-          <p class="join-newsletter">Zapisz się do newslettera</p>
+        <div class="newsletter">
+          <p class="newsletter__join">Zapisz się do newslettera</p>
+
           <form
-            class="signup-form"
+            class="newsletter__form"
             name="signup-form"
             autocomplete="on"
             novalidate
           >
             <label>
               <input
-                class="e-mail-footer"
+                class="newsletter__e-mail"
                 type="email"
                 name="email"
                 placeholder="E-mail"
               />
             </label>
 
-            <button class="submit-footer" type="submit">
+            <button class="newsletter__submit" type="submit">
               Zapisz się
-              <svg class="joinus-icon" width="24px" height="24px">
+              <svg class="newsletter__submit-icon" width="24px" height="24px">
                 <use href="./images/forms-icon.svg#icon-send"></use>
               </svg>
             </button>
