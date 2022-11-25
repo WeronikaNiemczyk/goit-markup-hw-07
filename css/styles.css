@@ -740,8 +740,14 @@ ul {
   width: 100%;
   resize: none;
 }
-.comment-fs {
+.form__fieldset--comment {
   margin-bottom: 20px;
+  position: relative;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  display: flex;
+  margin-block: 28px;
+  margin-inline: 40px;
 }
 .form__label {
   position: absolute;

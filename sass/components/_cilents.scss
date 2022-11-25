@@ -1,0 +1,38 @@
+/* CLIENTS */
+
+.clients {
+  display: flex;
+  gap: 30px;
+  flex-basis: calc(100% - 150px) / 6;
+  cursor: pointer;
+}
+.clients__logo {
+  padding-top: 17.71px;
+  padding-bottom: 17.71px;
+  padding-left: 32px;
+  padding-right: 32px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  transition-property: fill, border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  fill: #afb1b8;
+}
+.clients__logo:hover,
+.clients__logo:focus {
+  --color3: var(--main-link-color);
+  fill: var(--color3);
+  --color2: var(--main-link-color);
+  fill: var(--color2);
+  border: 1px solid var(--main-link-color);
+}
+.clients__logo:focus .buttons__menu {
+  line-height: 1.26;
+  font-weight: 500;
+  background-color: #f5f4fa;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border-radius: 4px;
+}

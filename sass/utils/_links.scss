@@ -1,0 +1,16 @@
+.link {
+    text-decoration: none;
+    display: block;
+    color: #000000;
+  }
+  .link:hover {
+    color: var(--main-link-color);
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);
+  }
+  .link:focus {
+    color: var(--main-link-color);
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);
+  }
+  
