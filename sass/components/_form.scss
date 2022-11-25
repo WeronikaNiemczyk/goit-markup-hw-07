@@ -1,5 +1,36 @@
 .form {
   position: relative;
+
+  & .form__icon {
+    fill: #212121;
+    margin-right: 15px;
+  }
+  & input {
+    border: 0;
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+  }
+  & input::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+  }
+  &:has(input:focus) .form__fieldset:has(input:focus) {
+    border-color: var(--main-link-color);
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);
+  }
+  &:has(textarea:focus) .form__fieldset--comment:has(textarea:focus) {
+    border-color: var(--main-link-color);
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);
+  }
+}
+.form__icon {
+  width: 12px;
+  height: 12px;
+  margin-top: 14px;
+  margin-left: 15px;
 }
 .form__header {
   font-weight: 700;
@@ -19,18 +50,14 @@
   display: flex;
   margin-block: 28px;
   margin-inline: 40px;
+
+  &:has(input:focus) .form__icon {
+    fill: var(--main-link-color);
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);
+  }
 }
 
-.form .form__icon {
-  fill: #212121;
-  margin-right: 15px;
-}
-.form__icon {
-  width: 12px;
-  height: 12px;
-  margin-top: 14px;
-  margin-left: 15px;
-}
 .form__input {
   height: 40px;
   width: 80%;
@@ -69,36 +96,8 @@
   color: var(--font-background-color);
 }
 
-.form input {
-  border: 0;
-  background-color: transparent;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.01em;
-}
-
-.form input::placeholder {
-  color: rgba(117, 117, 117, 0.5);
-}
-
 input:focus {
   outline: 0;
-}
-.form:has(input:focus) .form__fieldset:has(input:focus) {
-  border-color: var(--main-link-color);
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--transition-timing-function);
-}
-.form:has(textarea:focus) .form__fieldset:has(textarea:focus) {
-  border-color: var(--main-link-color);
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--transition-timing-function);
-}
-
-.form__fieldset:has(input:focus) .form__icon {
-  fill: var(--main-link-color);
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--transition-timing-function);
 }
 
 .my-input {
@@ -117,23 +116,28 @@ input:focus {
   position: relative;
   cursor: pointer;
   padding-left: 38px;
+
+  & input {
+    position: absolute;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  & .form__checkmark {
+    position: absolute;
+    width: 16px;
+    height: 15px;
+    border: 2px solid #212121;
+    border-radius: 2px;
+    left: 15px;
+    top: -2px;
+  }
+  & input:checked ~ .form__checkmark::after {
+    display: block;
+  }
 }
-.form__checkbox input {
-  position: absolute;
-  cursor: pointer;
-  width: 0;
-  height: 0;
-  opacity: 0;
-}
-.form__checkbox .form__checkmark {
-  position: absolute;
-  width: 16px;
-  height: 15px;
-  border: 2px solid #212121;
-  border-radius: 2px;
-  left: 15px;
-  top: -2px;
-}
+
 .form__check-icon {
   position: absolute;
   left: 17px;
@@ -155,9 +159,7 @@ input:focus {
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
 }
-.form__checkbox input:checked ~ .form__checkmark::after {
-  display: block;
-}
+
 .form__regulamin {
   text-decoration: none;
   color: var(--main-link-color);

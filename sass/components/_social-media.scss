@@ -12,13 +12,14 @@
   transition-property: color;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
+
+  &:hover,
+  &:focus .social-media__icon:hover {
+    --color4: var(--main-background-color);
+    fill: var(--color4);
+  }
 }
 
-.social-media__image:hover,
-.social-media__image:focus .social-media__icon:hover {
-  --color4: var(--main-background-color);
-  fill: var(--color4);
-}
 .social-media__icon {
   width: 44px;
   height: 44px;
@@ -31,10 +32,11 @@
   transition-property: background-color, transform;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
-}
-.social-media__icon:hover,
-.social-media__icon:focus {
-  background-color: #2196f3;
-  --color4: var(--main-background-color);
-  fill: var(--main-background-color);
+
+  &:hover,
+  &:focus {
+    background-color: #2196f3;
+    --color4: var(--main-background-color);
+    fill: var(--main-background-color);
+  }
 }

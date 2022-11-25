@@ -1,4 +1,9 @@
-
+.newsletter {
+  padding-top: 12px;
+  padding-left: 70px;
+  display: flex;
+  flex-direction: column;
+}
 .newsletter__join {
   font-size: 14px;
   font-weight: 700;
@@ -6,13 +11,6 @@
   text-align: left;
   text-transform: uppercase;
   color: var(--main-background-color);
-}
-
-.newsletter {
-  padding-top: 12px;
-  padding-left: 70px;
-  display: flex;
-  flex-direction: column;
 }
 .newsletter__form {
   display: flex;
@@ -33,11 +31,13 @@
   background-color: transparent;
   padding-left: 16px;
   color: rgba(255, 255, 255, 0.3);
+
+  &:focus {
+    outline: 0;
+    color: var(--main-background-color);
+  }
 }
-.newsletter__e-mail:focus {
-  outline: 0;
-  color: var(--main-background-color);
-}
+
 .newsletter__submit {
   width: 200px;
   height: 50px;
@@ -56,5 +56,3 @@
   justify-content: center;
   align-items: center;
 }
-
-
