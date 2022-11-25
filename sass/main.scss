@@ -1,4 +1,4 @@
-@import "./utils/common";
+@import "./utils/variables";
 @import "./utils/container";
 @import "./utils/section";
 @import "./utils/logo";
@@ -13,12 +13,12 @@
 @import "./components/social-media";
 @import "./components/join-us";
 @import "./components/newsletter";
-@import "./components/buttons-menu";
 @import "./components/footer";
 @import "./components/address";
 @import "./utils/backdrop";
 @import "./utils/is-hidden";
 @import "./components/modal";
 @import "./components/form";
-@import "./components/profession";
-
+@import "./portfolio/profession";
+@import "./portfolio/header";
+@import "./portfolio/buttons";
